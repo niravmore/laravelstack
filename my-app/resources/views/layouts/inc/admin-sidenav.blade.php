@@ -2,10 +2,22 @@
     <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
         <div class="sb-sidenav-menu">
             <div class="nav">
-                <div class="sb-sidenav-menu-heading">Core</div>
-                <a class="nav-link" href="index.html">
+                <div class="sb-sidenav-menu-heading"></div>
+                <a class="nav-link" href="dashboard">
                     <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                     Dashboard
+                </a>
+                <a class="nav-link" href="categories">
+                    <div class="sb-nav-link-icon"><i class="fas fa-list-alt"></i></div>
+                    Category Management
+                </a>
+                <a class="nav-link" href="papers">
+                    <div class="sb-nav-link-icon"><i class="fas fa-file-alt"></i></div>
+                    Paper Management
+                </a>
+                <a class="nav-link" href="settings">
+                    <div class="sb-nav-link-icon"><i class="fas fa-cog"></i></div>
+                    Settings
                 </a>
                 <div class="sb-sidenav-menu-heading">Interface</div>
                 <a class="nav-link collapsed" href="#" data-bs-toggle="collapse" data-bs-target="#collapseLayouts"
@@ -72,7 +84,7 @@
         </div>
         <div class="sb-sidenav-footer">
             <div class="small">Logged in as:</div>
-            Start Bootstrap
+            @yield('user') <a class="nav-link" href="profile">Guest</a>
         </div>
     </nav>
 </div>

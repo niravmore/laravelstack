@@ -16,4 +16,14 @@ class DashboardController extends Controller
     {
         return view('admin.login');
     }
+
+    public function categories()
+    {
+        return view('admin.categories');
+    }
+
+    public function papers()
+    {
+        return view('admin.papers');
+    }
 }
