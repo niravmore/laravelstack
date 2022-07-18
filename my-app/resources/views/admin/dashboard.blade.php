@@ -2,6 +2,14 @@
 
 @section('title', 'Admin Dashboard')
 
+@section('navbar')
+    @include('layouts.inc.admin-navbar')
+@endsection
+
+@section('sidebar')
+    @include('layouts.inc.admin-sidenav')
+@endsection
+
 @section('content')
 <div class="container-fluid px-4">
     <h1 class="mt-4">Dashboard</h1>

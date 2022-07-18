@@ -24,9 +24,9 @@
 </head>
 
 <body>
-    @include('layouts.inc.admin-navbar')
+    @yield('navbar')
     <div id="layoutSidenav">
-        @include('layouts.inc.admin-sidenav')
+        @yield('sidebar')
         <div id="layoutSidenav_content">
             <main>
                 @yield('content')
@@ -34,7 +34,6 @@
             @include('layouts.inc.admin-footer')
         </div>
     </div>
-
     <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}" crossorigin="anonymous"></script>
     <script src="{{ asset('assets/js/scripts.js') }}"></script>
 </body>

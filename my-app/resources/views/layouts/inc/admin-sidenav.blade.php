@@ -83,8 +83,8 @@
             </div>
         </div>
         <div class="sb-sidenav-footer">
-            <div class="small">Logged in as:</div>
-            @yield('user') <a class="nav-link" href="profile">Guest</a>
+            <div class="small">Logged in as: <a class="text-white" href="profile">Guest</a></div>
+            @yield('user')
         </div>
     </nav>
 </div>
